@@ -108,7 +108,18 @@ ol {
 .nav-link:hover,
 .nav-link:focus {
   color: #404bbf;
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.nav-link::after {
+  position: relative;
+  border-radius: 2px;
+  background: var(--OCEAN, #404bbf);
+  width: 48px;
+  height: 4px;
+}
+
 .nav-link {
   color: var(--navy-blue-color);
   font-size: 16px;
@@ -127,6 +138,8 @@ ol {
 .list-contact:hover,
 .list-contact:focus {
   color: var(--blue-color);
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .list-contact {
@@ -155,7 +168,10 @@ ol {
 .order-service-button:hover,
 .order-service-button:focus {
   background-color: #404bbf;
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .order-service-button {
   color: var(--white-color);
   font-family: "Roboto", sans-serif;
@@ -337,6 +353,8 @@ ol {
 .link-social-media:focus {
   background-color: #404bbf;
   background-color: #404bbf;
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .blue-circle {
@@ -409,6 +427,8 @@ ol {
 .icons-size-bott:focus {
   color: var(--ocean-color);
   border-color: var(--ocean-color);
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icons-size-bott {
@@ -459,6 +479,8 @@ ol {
 .link-social-media-fotter:focus {
   background-color: #31d0aa;
   background-color: #31d0aa;
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .title-web-name-footer {
@@ -518,7 +540,10 @@ ol {
   border-radius: 4px;
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
     0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .navigation-button {
   color: var(--blue-color);
   font-size: 16px;
@@ -562,6 +587,8 @@ ol {
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .images-container {
