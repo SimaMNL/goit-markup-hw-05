@@ -38,6 +38,33 @@ ol {
 
 /* Classes */
 
+.modal-content {
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  background: var(--navy-blue-color, rgba(46, 47, 66, 0.4));
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  overflow: auto;
+}
+
+.modal-hero-section {
+  position: relative;
+  width: 408px;
+  height: 584px;
+  border-radius: 4px;
+  background: var(--DAIRY, #fcfcfc);
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+}
+
+.modal-button {
+  fill: var(--corn-flower);
+  background: none;
+}
+
 .parent {
   display: flex;
   width: 1158px;
@@ -107,17 +134,31 @@ ol {
 
 .nav-link:hover,
 .nav-link:focus {
-  color: #404bbf;
+  color: var(--ocean-color);
   transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-link::after {
+.underline-nav-link::after {
+  content: "";
   position: relative;
+  width: 100%;
+  background: var(--ocean-color);
   border-radius: 2px;
-  background: var(--OCEAN, #404bbf);
-  width: 48px;
+  display: block;
   height: 4px;
+  top: 24px;
+}
+
+.underline-nav-links:after {
+  content: "";
+  position: relative;
+  width: 100%;
+  background: var(--ocean-color);
+  border-radius: 2px;
+  display: block;
+  height: 4px;
+  top: 24px;
 }
 
 .nav-link {
@@ -626,6 +667,32 @@ ol {
   background: url(<path-to-image>),
     lightgray -25.026px 0px / 125% 100% no-repeat;
   max-width: 100%;
+}
+
+.images-what-we-make:hover .overlay {
+  transform: translatey(0);
+}
+
+.test {
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.overlay {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  width: 360px;
+  height: 300px;
+  background: #4d5ae5;
+  transform: translatey(100%);
+  transition: 250ms ease-in-out;
+}
+
+.test:hover .overlay {
+  transform: translatey(0%);
 }
 
 .images-title {
