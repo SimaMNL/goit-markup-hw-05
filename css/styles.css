@@ -154,24 +154,24 @@ ol {
 
 .underline-nav-link::after {
   content: "";
-  position: relative;
+  position: absolute;
   width: 100%;
-  background: var(--ocean-color);
+  background: #404bbf;
   border-radius: 2px;
   display: block;
   height: 4px;
-  top: 24px;
+  bottom: -1px;
 }
 
 .underline-nav-links:after {
   content: "";
-  position: relative;
+  position: absolute;
   width: 100%;
-  background: var(--ocean-color);
+  background: #404bbf;
   border-radius: 2px;
   display: block;
   height: 4px;
-  top: 24px;
+  bottom: -1px;
 }
 
 .nav-link {
@@ -182,6 +182,7 @@ ol {
   line-height: 150%;
   letter-spacing: 0.32px;
   padding: 24px 0 24px 0;
+  position: relative;
 }
 
 .list {
