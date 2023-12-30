@@ -99,12 +99,12 @@ ol {
   fill: #2e2f42;
 }
 
-.Modal-close-svg {
+.modal-close-svg {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.Modal-close-svg:focus,
-:hover {
+.modal-close-svg:focus,
+.modal-close-svg:hover {
   fill: #ffffff;
   fill: #ffffff;
 }
@@ -645,6 +645,12 @@ ol {
     background-color 250ms cubic-bezier(0.4, 0, 0, 0.2, 1),
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0, 0.2, 1);
+  /* transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+  /* transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+  /* transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0, 0.2, 1); */
 }
 
 .navigation-gab-button {
@@ -669,7 +675,7 @@ ol {
 }
 
 .images:hover,
-:focus {
+.images:focus {
   border: 1px solid var(--CLOUD, #f4f4fd);
   background: var(--WHITE, #fff);
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
@@ -744,6 +750,7 @@ ol {
   line-height: 150%;
   letter-spacing: 0.32px;
   padding: 40px 32px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0, 0.2, 1);
 }
 
 .overlay-container:hover .overlay {
