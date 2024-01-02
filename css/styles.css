@@ -45,7 +45,8 @@ ol {
   left: 0;
   height: 100%;
   width: 100%;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-hero-section {
@@ -99,6 +100,7 @@ ol {
 
 .close-modal-button {
   fill: #2e2f42;
+  margin: 1px solid rgba(0, 0, 0, 0, 0.1);
 }
 
 .modal-close-svg {
@@ -682,6 +684,10 @@ ol {
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+  transform: translateY(0%);
+}
+
+.images:focus {
   transform: translateY(0%);
 }
 
